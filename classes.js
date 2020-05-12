@@ -104,8 +104,29 @@ class ProgressiveManager extends Manager {
     this.title = 'Not a manager'
     this.bonus = 0
   }
-}
 
+  hire(){
+    super.hire();
+    const reportsLength = this.reports.length
+    if ( reportsLength > 100){
+      this.title = 'Bestest Manager'
+    }else if (reportsLength > 50){
+      this.title = 'Manager Plus'
+    } else if (reportsLength > 10){
+      this.title = 'Manager'
+    }else if (reportsLength > 3){
+      this.title = 'Mostly Manager'
+    } else if (reportsLength > 0){
+      this.title = "Barely Manager"
+    }
+
+  }
+  fire(){
+    super.fire()
+    this.bonus += 100;
+    
+  }
+}
 
 
 ////////// PROBLEM 4 - Black Diamond //////////
@@ -132,5 +153,7 @@ class ProgressiveManager extends Manager {
 */
 
 //Code Here
+
+
 
 
