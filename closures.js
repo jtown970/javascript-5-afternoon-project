@@ -66,14 +66,7 @@ callJake(4355559248)
 */
 
 //Code Here
-// function makeCounter () {
-//   var num = 1;
-//   function add () {
-//     num++;
-//   }
-//   return add
-// }
-// console.log(num)
+
 
 function makeCounter() {
   var num = 0;
